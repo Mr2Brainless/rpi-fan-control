@@ -1,0 +1,10 @@
+[Unit]
+Description=GPIO fan-control
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/bin/fan-control.py
+Type=exec
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
